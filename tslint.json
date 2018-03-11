@@ -47,7 +47,7 @@
     "no-arg": true,
     "no-bitwise": true,
     "no-console": [
-      true,
+      false,
       "debug",
       "info",
       "time",
@@ -120,13 +120,11 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
       "camelCase"
     ],
     "component-selector": [
-      true,
+      false,
       "element",
-      "app",
       "kebab-case"
     ],
     "no-output-on-prefix": true,

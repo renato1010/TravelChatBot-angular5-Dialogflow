@@ -1,0 +1,9 @@
+<h1>Planeador de Viajes Bot 🤖</h1>
+<ng-container *ngFor="let mensaje of mensajes | async">
+<div class="message" [ngClass]="{'from': mensaje.envia === 'bot', 'to': mensaje.envia === 'user'}">
+  {{mensaje.texto}}
+</div>
+</ng-container>
+<label for="nameField">Tu mensaje</label>
+<input title="nameField" type="text" [(ngModel)]="inputValue" (keyup.enter)="enviarMensaje()">
+<button (click)="enviarMensaje()">Enviar</button>
